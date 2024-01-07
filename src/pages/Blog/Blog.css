@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .flex-col-web {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,17 @@
+a {
+  color: #b3b3b3;
+  font-size: 16px;
+  text-align: left;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Styles for links on hover */
+a:hover {
+  color: #8dce19; /* Color to change to on hover */
+}
+.input-field::placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+/*  */

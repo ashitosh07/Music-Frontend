@@ -1,0 +1,76 @@
+/* Banner.css */
+
+/* Container styles */
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; /* Align to the right */
+  padding-top: 8%;
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+/* Right side (text) styles */
+.banner-text-container {
+  width: 40%; /* Take up 50% of the container */
+  padding: 2rem;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  color: #fff;
+  text-align: left; /* Align text to the left */
+}
+
+/* Heading styles */
+.banner-text-container h1 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: 'Bungee', cursive;
+  font-size: 3rem;
+  color: #000000;
+}
+
+/* Paragraph styles */
+.banner-text-container p {
+  margin-bottom: 2rem;
+  color: #070505;
+  font-size: 1.2rem;
+}
+
+/* Button styles */
+.banner-text-container .btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+
+  font-family: Consolas, sans-serif;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #90764a;
+  color: #000000;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-text-container .btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .banner-container {
+    flex-direction: column;
+    justify-content: center; /* Center on smaller screens */
+  }
+
+  .banner-text-container {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+}
