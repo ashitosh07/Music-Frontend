@@ -26,11 +26,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
 
-          <Route path='/about' element={<Achievement />} />
-          <Route path='/project' element={<Project />} />
-          <Route path='/paypal' element={<Paypal />} />
-          <Route path='/contact' element={<Userboard />} />
-          <Route path='/blog' element={<BlogCard />} />
+          <Route path='/' element={<Achievement />} />
+          <Route path='/' element={<Project />} />
+
+          <Route path='/' element={<Userboard />} />
+          <Route path='/' element={<BlogCard />} />
           <Route
             path='/blog/:id'
             element={<BlogDetail blogData={allMusicDetailsData} />}
