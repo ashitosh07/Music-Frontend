@@ -1,36 +1,37 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import './About.css'
-import '../../components/PrimaryBtn.css'
-import '../shared/Shared.css'
-import badges from './badges'
-import Aboutme from '../../assets/Aboutme.png'
+import React from "react";
+import { motion } from "framer-motion";
+import "./About.css";
+import "../../components/PrimaryBtn.css";
+import "../shared/Shared.css";
+import badges from "./badges";
+import Aboutme from "../../assets/Aboutme.png";
 const h1Styles = {
-  color: 'white',
-  fontWeight: 'bold',
-  fontSize: '36px',
-}
+  color: "white",
+  fontWeight: "bold",
+  fontSize: "36px",
+};
 
 const mediaQueryStyles = {
-  textAlign: 'center', // Default style
-}
+  textAlign: "center", // Default style
+};
 
 const About = () => {
   if (window.innerWidth <= 540) {
-    mediaQueryStyles.textAlign = 'left'
+    mediaQueryStyles.textAlign = "left";
   } else if (window.innerWidth >= 600) {
-    mediaQueryStyles.textAlign = 'center'
+    mediaQueryStyles.textAlign = "center";
   }
   return (
     <div
-      className='parent pt-16 my-16'
-      style={{ backgroundColor: 'black', borderRadius: '40px' }}
+      className="parent pt-16 my-16"
+      style={{ backgroundColor: "black", borderRadius: "40px" }}
+      id="about"
     >
-      <div className='flex justify-center items-center p-4'>
-        <div className='grid grid-cols-1 md:grid-cols-1 gap-8'>
+      <div className="flex justify-center items-center p-4">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           <p style={{ ...h1Styles, ...mediaQueryStyles }}>About</p>
-          <div className='centered-container'>
-            <p className='text-neutral font-medium'>
+          <div className="centered-container">
+            <p className="text-neutral font-medium">
               Michael Foster along with his wife Denisa and their two sons
               Adoniram and Abishai are currently serving as missionaries in the
               country of Romania and currently reside in the city of Oradea.
@@ -38,7 +39,7 @@ const About = () => {
               God’s church built.
             </p>
             <br />
-            <p className='text-neutral font-medium'>
+            <p className="text-neutral font-medium">
               Before being called into missions full-time Michael was actively
               involved in music ministry where he toured the United States
               playing and ministering to humble-sized audiences. In 2010 Michael
@@ -46,7 +47,7 @@ const About = () => {
               picking up a microphone or instrument to record another song.
             </p>
             <br />
-            <p className='text-neutral font-medium'>
+            <p className="text-neutral font-medium">
               in the fall of 2022 that all changed when Michael found himself
               burned out, tired, and in many ways in a state of crisis and in
               need of an outlet for his thoughts, reflections, and emotions. On
@@ -59,15 +60,15 @@ const About = () => {
               painkiller for his current state.
             </p>
             <br />
-            <p className='text-neutral font-medium'>
+            <p className="text-neutral font-medium">
               This one evening set off a chain reaction in Michael that led to a
               musical explosion that he didn’t even know was waiting to detonate
               inside of him. It has led to this current project that Denisa has
               convinced him to share with others through a tax-deductible
               donation to the work God is doing through them in Romania and
               around the world.
-            </p>{' '}
-            <p className='text-neutral font-medium'>
+            </p>{" "}
+            <p className="text-neutral font-medium">
               It is their prayer that the music will be enjoyed by those who
               listen to it, and in some small way perhaps even impact a life or
               two.
@@ -91,7 +92,7 @@ const About = () => {
         </h1>
       </div> */}
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

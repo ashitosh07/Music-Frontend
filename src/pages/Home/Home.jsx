@@ -12,6 +12,7 @@ import Blog from '../Blog/Blog'
 import BlogDetail from '../Blog/BlogDetail'
 import BlogCard from '../Blog/BlogCard'
 import NowPlaying from '../Blog/NowPlaying'
+import AlbumList from '../../components/Alll Songs/AlbumList'
 
 const Home = () => {
   return (
@@ -19,8 +20,9 @@ const Home = () => {
       <div className='pt-16'>
         <Banner />
         <About />
-        <NowPlaying />
+        <AlbumList />
         <BlogCard />
+        <NowPlaying />
         {/*  <Testimonial />
         <Service />
         <Blog />

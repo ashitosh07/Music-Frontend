@@ -56,7 +56,7 @@ function BlogCard() {
   return (
     <>
       {' '}
-      <div className='bg-black'>
+      <div className='bg-black' id='music'>
         <div className='max-w-8xl mx-auto lg:px-2'>
           <div className='flex flex-col items-center justify-center mt-16 bg-black'>
             <h1
